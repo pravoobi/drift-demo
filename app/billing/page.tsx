@@ -1,4 +1,5 @@
 "use client"
+import { Badge } from "@/components/ui/badge"
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 
@@ -29,9 +30,7 @@ export default function BillingPage() {
         <CardContent className="flex items-center justify-between">
           <div className="flex items-center gap-3">
             <span className="text-lg font-medium">Growth</span>
-            <span className="inline-flex items-center rounded-full border border-transparent bg-violet-100 px-2.5 py-0.5 text-xs font-semibold text-violet-800">
-              Annual
-            </span>
+            <Badge className='inline-flex items-center rounded-full border border-transparent bg-violet-100 px-2.5 py-0.5 text-xs font-semibold text-violet-800' variant='outline'>Annual</Badge>
           </div>
 
           {/* Marketing asked for a gradient. The design system has no gradient variant. */}
